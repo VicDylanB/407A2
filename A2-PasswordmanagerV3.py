@@ -3,11 +3,11 @@ Password Managewr
 Dylan Brown
 11/10/22
 """
+from multiprocessing.sharedctypes import Value
 import os
 from turtle import clear
 import sys
 
-    
 
 #Defines the Text menu
 def menu():
@@ -62,18 +62,19 @@ while True:
     try:
        choice = float(input("Pick Menu [1-3]: "))
     except ValueError:
-        os.system('cls')
-        print('Invalid option') 
+        print('Invalid option')
+
+
 
 #Creates the choices for the menu
     if choice==1:
         os.system('cls')
         print('Add New Credentials')
         NewCreds()
-    elif choice == 2:
+    if choice == 2:
         os.system('cls')
         ReadCreds()
-    elif choice==3:
+    if choice==3:
         print('Goodbye exiting')
         sys.exit
         break
