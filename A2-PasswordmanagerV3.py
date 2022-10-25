@@ -65,7 +65,6 @@ while True:
         print('Invalid option')
 
 
-
 #Creates the choices for the menu
     if choice==1:
         os.system('cls')
@@ -84,9 +83,9 @@ while True:
 
 """
 Hettige Jayatissa
-22/10/22
+24/10/22
 Version 3
 This code stores and reads Usernames and Passwords for inputted Websites
-1 = select menu 1
+Entering 1 opens the NewCreds menu allowing for the user to input their credentials for a website
 A help section could be added to enhance the functionality of the program if users get confused
 """
